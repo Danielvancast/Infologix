@@ -1,16 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>¡Gracias por tu mensaje!</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <title>Gracias por tu mensaje</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4fff7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: #2f6652;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #749c7a;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #5b7c61;
+        }
+    </style>
 </head>
-<body class="bg-green-50 text-center py-32 px-4 font-sans">
-  <div class="max-w-xl mx-auto">
-    <h1 class="text-4xl font-bold text-green-700 mb-6">¡Gracias por contactarnos!</h1>
-    <p class="text-lg text-gray-700 mb-8">Hemos recibido tu mensaje y nos pondremos en contacto contigo pronto.</p>
-    <a href="index.html" class="inline-block bg-green-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-green-700 transition">Volver al inicio</a>
-  </div>
+<body>
+    <h1>¡Gracias por tu mensaje!</h1>
+    <p>En breve te responderemos. Valoramos tu interés en InfoLogix.</p>
+    <a href="index.html">Volver al inicio</a>
 </body>
 </html>
