@@ -2,19 +2,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>InfoLogix | Contacto</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InfoLogix | Contacto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body style="font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
-    <h1>Contáctanos</h1>
-    <form action="https://formsubmit.co/daniel@vancastsolutions.com" method="POST" style="display: flex; flex-direction: column; width: 300px; gap: 10px;">
+<body class="bg-white text-gray-800">
+  <section class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">Hablemos sobre tu proyecto</h2>
+      <p class="text-gray-600 mb-8">Completa el formulario y uno de nuestros expertos se pondrá en contacto contigo en menos de 24 horas.</p>
+      <form action="https://formsubmit.co/daniel@vancastsolutions.com" method="POST" class="bg-white p-8 rounded-lg shadow-md space-y-6">
         <input type="hidden" name="_next" value="https://danielvancast.github.io/Infologix/gracias.html">
         <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Nombre completo" required />
-        <input type="email" name="email" placeholder="Correo electrónico" required />
-        <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
-        <button type="submit" style="padding: 10px; background-color: #749c7a; color: white; border: none; cursor: pointer;">Enviar</button>
-    </form>
+        <div>
+          <label for="name" class="block mb-2 font-medium text-dark">Nombre completo</label>
+          <input type="text" id="name" name="name" required class="w-full border px-4 py-2 rounded-lg">
+        </div>
+        <div>
+          <label for="email" class="block mb-2 font-medium text-dark">Correo electrónico</label>
+          <input type="email" id="email" name="email" required class="w-full border px-4 py-2 rounded-lg">
+        </div>
+        <div>
+          <label for="message" class="block mb-2 font-medium text-dark">Mensaje</label>
+          <textarea id="message" name="message" rows="4" required class="w-full border px-4 py-2 rounded-lg"></textarea>
+        </div>
+        <button type="submit" class="bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition">
+          Enviar mensaje
+        </button>
+      </form>
+    </div>
+  </section>
 </body>
 </html>
