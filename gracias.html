@@ -1,49 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Gracias por tu mensaje</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4fff7;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            color: #2f6652;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        a {
-            display: inline-block;
-            text-decoration: none;
-            background-color: #749c7a;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        a:hover {
-            background-color: #5b7c61;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gracias por tu mensaje</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>¡Gracias por tu mensaje!</h1>
-    <p>En breve te responderemos. Valoramos tu interés en InfoLogix.</p>
-    <a href="index.html">Volver al inicio</a>
+<body class="bg-white text-gray-800 flex items-center justify-center min-h-screen">
+  <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md">
+    <h1 class="text-4xl font-bold mb-4 text-green-600">¡Gracias!</h1>
+    <p class="mb-6 text-lg">Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto muy pronto.</p>
+    <a href="https://danielvancast.github.io/Infologix/" class="inline-block px-6 py-3 bg-green-600 text-white font-semibold rounded hover:bg-green-700 transition">
+      Volver al inicio
+    </a>
+  </div>
 </body>
 </html>
